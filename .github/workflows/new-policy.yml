@@ -1,0 +1,54 @@
+name: Crear Nueva Política de App
+
+on:
+  workflow_dispatch:
+    inputs:
+      app_name:
+        description: 'Nombre de la aplicación (Ej: Brick Breaker, Mi App)'
+        required: true
+        type: string
+      app_slug:
+        description: 'Nombre de la carpeta/URL (Ej: brick-breaker). Si se deja vacío se generará automáticamente.'
+        required: false
+        type: string
+      category:
+        description: 'Categoría de la app (Ej: Juegos, Utilidades, Productividad)'
+        required: false
+        default: 'Juegos'
+        type: string
+      contact_email:
+        description: 'Correo electrónico de contacto/soporte'
+        required: false
+        default: 'soporte.apps.hicham@gmail.com'
+        type: string
+
+jobs:
+  create-policy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generar nueva política y actualizar portal
+        env:
+          APP_NAME: ${{ inputs.app_name }}
+          APP_SLUG: ${{ inputs.app_slug }}
+          APP_CATEGORY: ${{ inputs.category }}
+          APP_EMAIL: ${{ inputs.contact_email }}
+        run: |
+          node scripts/generate-policy.js
+
+      - name: Hacer commit y push de la nueva política
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add apps/ index.html
+          git commit -m "feat(policy): crear política de privacidad para ${{ inputs.app_name }}"
+          git push origin main
