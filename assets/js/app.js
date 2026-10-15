@@ -15,27 +15,26 @@ function toggleTheme() {
 
 function updateThemeText(theme) {
   const btn = document.getElementById('theme-toggle-btn');
+  const lang = localStorage.getItem('policy_portal_lang') || 'es';
   if (btn) {
-    btn.textContent = theme === 'dark' ? 'Modo Claro' : 'Modo Oscuro';
+    if (theme === 'dark') {
+      btn.textContent = lang === 'ca' ? 'Mode Clar' : (lang === 'en' ? 'Light Mode' : 'Modo Claro');
+    } else {
+      btn.textContent = lang === 'ca' ? 'Mode Fosc' : (lang === 'en' ? 'Dark Mode' : 'Modo Oscuro');
+    }
   }
 }
 
-// Language Switcher (ES / EN)
+// Language Switcher (ES / CA / EN)
 function setLanguage(lang) {
+  const targetAttr = `data-lang-${lang}`;
   document.querySelectorAll('[data-lang-es]').forEach(el => {
-    if (lang === 'es') {
+    const val = el.getAttribute(targetAttr) || el.getAttribute('data-lang-es');
+    if (val !== null) {
       if (el.tagName === 'INPUT') {
-        el.placeholder = el.getAttribute('data-lang-es');
+        el.placeholder = val;
       } else {
-        el.innerHTML = el.getAttribute('data-lang-es');
-      }
-    } else {
-      if (el.getAttribute('data-lang-en')) {
-        if (el.tagName === 'INPUT') {
-          el.placeholder = el.getAttribute('data-lang-en');
-        } else {
-          el.innerHTML = el.getAttribute('data-lang-en');
-        }
+        el.innerHTML = val;
       }
     }
   });
@@ -45,13 +44,17 @@ function setLanguage(lang) {
   });
 
   localStorage.setItem('policy_portal_lang', lang);
+  const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+  updateThemeText(currentTheme);
 }
 
 // Copy URL for Google Play Console
 function copyCurrentUrl() {
   const url = window.location.href;
+  const lang = localStorage.getItem('policy_portal_lang') || 'es';
+  const msg = lang === 'ca' ? 'Enllaç copiat al porta-retalls' : (lang === 'en' ? 'Link copied to clipboard' : 'Enlace copiado al portapapeles');
   navigator.clipboard.writeText(url).then(() => {
-    showToast('Enlace copiado al portapapeles');
+    showToast(msg);
   }).catch(() => {
     const input = document.createElement('input');
     input.value = url;
@@ -59,7 +62,7 @@ function copyCurrentUrl() {
     input.select();
     document.execCommand('copy');
     document.body.removeChild(input);
-    showToast('Enlace copiado al portapapeles');
+    showToast(msg);
   });
 }
 

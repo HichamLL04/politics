@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad | SHSmap</title>
+  <meta name="description" content="Política de Privacidad para la aplicación SHSmap (Sant Hilari Sacalm). Cumplimiento con RGPD, LOPD-GDD y Google Play Console.">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="../../index.html" class="brand-link" data-lang-es="Políticas de Privacidad" data-lang-ca="Polítiques de Privacitat" data-lang-en="Privacy Policies">
+        Políticas de Privacidad
+      </a>
+      <div class="nav-actions">
+        <div class="lang-selector">
+          <button type="button" class="lang-btn active" data-lang="es" onclick="setLanguage('es')">ES</button>
+          <button type="button" class="lang-btn" data-lang="ca" onclick="setLanguage('ca')">CA</button>
+          <button type="button" class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+        </div>
+        <button id="theme-toggle-btn" class="control-btn" onclick="toggleTheme()" aria-label="Cambiar tema">
+          Modo Claro
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Header -->
+    <section class="policy-header">
+      <nav class="policy-breadcrumb" aria-label="Breadcrumb">
+        <a href="../../index.html" data-lang-es="Inicio" data-lang-ca="Inici" data-lang-en="Home">Inicio</a>
+        <span>/</span>
+        <span>SHSmap</span>
+      </nav>
+
+      <h1 class="policy-title" data-lang-es="Política de Privacidad — SHSmap" data-lang-ca="Política de Privacitat — SHSmap" data-lang-en="Privacy Policy — SHSmap">
+        Política de Privacidad — SHSmap
+      </h1>
+
+      <div class="policy-meta-info">
+        <div><strong data-lang-es="Última actualización:" data-lang-ca="Última actualització:" data-lang-en="Last updated:">Última actualización:</strong> 4 de junio de 2026</div>
+        <div><strong data-lang-es="Responsable:" data-lang-ca="Responsable:" data-lang-en="Data Controller:">Responsable:</strong> Hicham</div>
+        <div><strong data-lang-es="Aplicación:" data-lang-ca="Aplicació:" data-lang-en="Application:">Aplicación:</strong> SHSmap &bull; Sant Hilari Sacalm (Android)</div>
+      </div>
+    </section>
+
+    <!-- Google Play Direct Copy Banner -->
+    <div class="google-play-banner">
+      <div class="banner-text">
+        <h4 data-lang-es="URL para Google Play Console" data-lang-ca="URL per a Google Play Console" data-lang-en="Google Play Console URL">URL para Google Play Console</h4>
+        <p data-lang-es="Enlace público oficial para el apartado Política de Privacidad en Play Console." data-lang-ca="Enllaç públic oficial per a l'apartat Política de Privacitat a Play Console." data-lang-en="Official public URL for the Privacy Policy section in Play Console.">
+          Enlace público oficial para el apartado Política de Privacidad en Play Console.
+        </p>
+      </div>
+      <div class="url-box">
+        <code id="current-page-url">https://hichamll04.github.io/politics/apps/shsmap/</code>
+        <button class="btn-primary" onclick="copyCurrentUrl()" style="padding: 6px 12px; font-size: 0.8rem;" data-lang-es="Copiar" data-lang-ca="Copiar" data-lang-en="Copy">Copiar</button>
+      </div>
+    </div>
+
+    <!-- Layout: Sidebar + Document Content -->
+    <div class="policy-layout">
+      <!-- Sidebar TOC -->
+      <aside class="policy-sidebar">
+        <div class="toc-title" data-lang-es="Contenido" data-lang-ca="Contingut" data-lang-en="Contents">Contenido</div>
+        <ul class="toc-nav">
+          <li><a href="#responsable" class="toc-link" data-lang-es="1. Responsable" data-lang-ca="1. Responsable" data-lang-en="1. Controller">1. Responsable</a></li>
+          <li><a href="#principios" class="toc-link" data-lang-es="2. Principios de tratamiento" data-lang-ca="2. Principis de tractament" data-lang-en="2. Principles">2. Principios de tratamiento</a></li>
+          <li><a href="#datos" class="toc-link" data-lang-es="3. Información recopilada" data-lang-ca="3. Informació recopilada" data-lang-en="3. Information Collected">3. Información recopilada</a></li>
+          <li><a href="#finalidad" class="toc-link" data-lang-es="4. Uso de la información" data-lang-ca="4. Com s'utilitza" data-lang-en="4. Purpose & Usage">4. Uso de la información</a></li>
+          <li><a href="#almacenamiento" class="toc-link" data-lang-es="5. Almacenamiento local" data-lang-ca="5. Emmagatzematge local" data-lang-en="5. Local Storage">5. Almacenamiento local</a></li>
+          <li><a href="#terceros" class="toc-link" data-lang-es="6. Servicios de terceros" data-lang-ca="6. Serveis de tercers" data-lang-en="6. Third Parties">6. Servicios de terceros</a></li>
+          <li><a href="#derechos" class="toc-link" data-lang-es="7. Tus derechos" data-lang-ca="7. Els teus drets" data-lang-en="7. Your Rights">7. Tus derechos</a></li>
+          <li><a href="#menores" class="toc-link" data-lang-es="8. Privacidad de menores" data-lang-ca="8. Privacitat de menors" data-lang-en="8. Children's Privacy">8. Privacidad de menores</a></li>
+          <li><a href="#seguridad" class="toc-link" data-lang-es="9. Seguridad de datos" data-lang-ca="9. Seguretat de dades" data-lang-en="9. Security">9. Seguridad de datos</a></li>
+          <li><a href="#contacto" class="toc-link" data-lang-es="10. Contacto y soporte" data-lang-ca="10. Contacte i suport" data-lang-en="10. Contact & Support">10. Contacto y soporte</a></li>
+        </ul>
+      </aside>
+
+      <!-- Content -->
+      <article class="policy-content">
+
+        <!-- 1. Responsable -->
+        <section id="responsable" class="policy-section">
+          <h2 data-lang-es="1. Identidad del Responsable" data-lang-ca="1. Identitat del Responsable" data-lang-en="1. Identity of Data Controller">1. Identidad del Responsable</h2>
+          <p data-lang-es="Esta Política de Privacidad describe cómo <strong>SHSmap</strong> («la aplicación» o «yo») recopila, utiliza y comparte la información del usuario al utilizar mi aplicación móvil turística enfocada en el municipio de <strong>Sant Hilari Sacalm</strong>." data-lang-ca="Aquesta Política de Privacitat descriu com <strong>SHSmap</strong> («l'aplicació» o «jo») recopila, utilitza i comparteix la informació de l'usuari en utilitzar la meva aplicació mòbil turística enfocada al municipi de <strong>Sant Hilari Sacalm</strong>." data-lang-en="This Privacy Policy describes how <strong>SHSmap</strong> (&quot;the application&quot; or &quot;I&quot;) collects, uses, and shares user information when using my tourist mobile application focused on the municipality of <strong>Sant Hilari Sacalm</strong>.">
+            Esta Política de Privacidad describe cómo <strong>SHSmap</strong> («la aplicación» o «yo») recopila, utiliza y comparte la información del usuario al utilizar mi aplicación móvil turística enfocada en el municipio de <strong>Sant Hilari Sacalm</strong>.
+          </p>
+          <p data-lang-es="Se garantiza el estricto cumplimiento del <strong>Reglamento General de Protección de Datos (RGPD UE 2016/679)</strong>, la <strong>Ley Orgánica 3/2018 (LOPD-GDD)</strong> y las directrices para desarrolladores de <strong>Google Play Console</strong>." data-lang-ca="Es garanteix l'estricte compliment del <strong>Reglament General de Protecció de Dades (RGPD UE 2016/679)</strong>, la <strong>Llei Orgànica 3/2018 (LOPD-GDD)</strong> i les directrius per a desenvolupadors de <strong>Google Play Console</strong>." data-lang-en="Strict compliance with the <strong>General Data Protection Regulation (GDPR EU 2016/679)</strong>, the <strong>Spanish Organic Law 3/2018 (LOPD-GDD)</strong>, and <strong>Google Play Developer Policies</strong> is fully guaranteed.">
+            Se garantiza el estricto cumplimiento del <strong>Reglamento General de Protección de Datos (RGPD UE 2016/679)</strong>, la <strong>Ley Orgánica 3/2018 (LOPD-GDD)</strong> y las directrices para desarrolladores de <strong>Google Play Console</strong>.
+          </p>
+          
+          <div class="info-box">
+            <ul>
+              <li><strong>Titular / Desarrollador:</strong> Hicham</li>
+              <li><strong>Aplicación:</strong> SHSmap (Guía turística de Sant Hilari Sacalm para Android)</li>
+              <li><strong>Email de soporte técnico:</strong> <a href="mailto:suport+hichamlaaouni.dev@gmail.com">suport+hichamlaaouni.dev@gmail.com</a> / <a href="mailto:hichamlaaouni.dev@gmail.com">hichamlaaouni.dev@gmail.com</a></li>
+              <li><strong>Municipio / Información turística:</strong> Ajuntament de Sant Hilari Sacalm (<a href="https://santhilari.cat" target="_blank" rel="noopener noreferrer">https://santhilari.cat</a>)</li>
+              <li><strong>Sitio Web del Portal:</strong> <a href="../../index.html">Portal de Políticas</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 2. Principios -->
+        <section id="principios" class="policy-section">
+          <h2 data-lang-es="2. Principios de Tratamiento" data-lang-ca="2. Principis de Tractament" data-lang-en="2. Principles of Data Processing">2. Principios de Tratamiento</h2>
+          <p data-lang-es="En el tratamiento de la información aplicamos con rigor los principios fundamentales exigidos por la normativa de privacidad:" data-lang-ca="En el tractament de la informació apliquem amb rigor els principis fonamentals exigits per la normativa de privacitat:" data-lang-en="In processing data, we rigorously apply the fundamental principles required by data protection regulations:">
+            En el tratamiento de la información aplicamos con rigor los principios fundamentales exigidos por la normativa de privacidad:
+          </p>
+          <ul>
+            <li data-lang-es="<strong>Licitud, lealtad y transparencia:</strong> Informamos de forma clara y accesible sobre cualquier acceso a sensores del dispositivo (como el GPS)." data-lang-ca="<strong>Licitud, lleialtat i transparència:</strong> Informem de manera clara i accessible sobre qualsevol accés a sensors del dispositiu (com el GPS)." data-lang-en="<strong>Lawfulness, fairness, and transparency:</strong> Clear, accessible notice is provided prior to any device sensor access (such as GPS).">
+              <strong>Licitud, lealtad y transparencia:</strong> Informamos de forma clara y accesible sobre cualquier acceso a sensores del dispositivo (como el GPS).
+            </li>
+            <li data-lang-es="<strong>Minimización de datos:</strong> Solo se accede a la ubicación precisa en primer plano mientras la aplicación está activa en pantalla para guiar la ruta turística." data-lang-ca="<strong>Minimització de dades:</strong> Només s'accedeix a la ubicació exacta en primer pla mentre l'aplicació està activa a la pantalla per guiar la ruta turística." data-lang-en="<strong>Data minimization:</strong> Foreground precise location is only accessed while the app is active on screen to guide the tourist route.">
+              <strong>Minimización de datos:</strong> Solo se accede a la ubicación precisa en primer plano mientras la aplicación está activa en pantalla para guiar la ruta turística.
+            </li>
+            <li data-lang-es="<strong>Limitación del plazo de conservación:</strong> Los datos de geolocalización no se guardan de forma permanente ni se envían a servidores de seguimiento." data-lang-ca="<strong>Limitació del termini de conservació:</strong> Les dades de geolocalització no es guarden de forma permanent ni s'envien a servidors de seguiment." data-lang-en="<strong>Storage limitation:</strong> Geolocation coordinates are not saved permanently nor uploaded to tracking servers.">
+              <strong>Limitación del plazo de conservación:</strong> Los datos de geolocalización no se guardan de forma permanente ni se envían a servidores de seguimiento.
+            </li>
+            <li data-lang-es="<strong>Integridad y confidencialidad:</strong> No vendemos, alquilamos ni compartimos datos con fines publicitarios o comerciales." data-lang-ca="<strong>Integritat i confidencialitat:</strong> No venem, lloguem ni compartim dades amb finalitats publicitàries o comercials." data-lang-en="<strong>Integrity and confidentiality:</strong> We do not sell, rent, or share personal data with third parties for advertising or commercial purposes.">
+              <strong>Integridad y confidencialidad:</strong> No vendemos, alquilamos ni compartimos datos con fines publicitarios o comerciales.
+            </li>
+          </ul>
+        </section>
+
+        <!-- 3. Información recopilada -->
+        <section id="datos" class="policy-section">
+          <h2 data-lang-es="3. Información que Recopilo" data-lang-ca="3. Informació que Recopilo" data-lang-en="3. Information I Collect">3. Información que Recopilo</h2>
+          <p data-lang-es="La aplicación <strong>SHSmap</strong> recopila y utiliza los siguientes tipos de datos exclusivamente para su correcto funcionamiento:" data-lang-ca="L'aplicació <strong>SHSmap</strong> recopila i utilitza els següents tipus de dades exclusivament per al seu correcte funcionament:" data-lang-en="The <strong>SHSmap</strong> application collects and uses the following types of data solely for its proper operation:">
+            La aplicación <strong>SHSmap</strong> recopila y utiliza los siguientes tipos de datos exclusivamente para su correcto funcionamiento:
+          </p>
+
+          <ul>
+            <li data-lang-es="<strong>Datos de Ubicación (GPS):</strong> La aplicación accede a la ubicación exacta en primer plano de tu dispositivo móvil mediante GPS. Esta información se utiliza exclusivamente para posicionarte en el mapa turístico y verificar si has llegado físicamente a los puntos de interés de las rutas locales turísticas (Geofencing). Los datos de ubicación se procesan de forma local en el dispositivo y no se guardan permanentemente en servidores externos." data-lang-ca="<strong>Dades d'Ubicació (GPS):</strong> L'aplicació accedeix a la ubicació exacta en primer pla del teu dispositiu mòbil mitjançant GPS. Aquesta informació s'utilitza exclusivament per posicionar-te en el mapa turístic i verificar si has arribat físicament als punts d'interès de les rutes locals turístiques (Geofencing). Les dades d'ubicació es processen de forma local al dispositiu i no es guarden permanentment en servidors externs." data-lang-en="<strong>Location Data (GPS):</strong> The application accesses the precise location in the foreground of your mobile device via GPS. This information is used exclusively to position you on the tourist map and verify if you have physically reached the points of interest of local tourist routes (Geofencing). Location data is processed locally on the device and is not saved permanently on external servers.">
+              <strong>Datos de Ubicación (GPS):</strong> La aplicación accede a la ubicación exacta en primer plano de tu dispositivo móvil mediante GPS. Esta información se utiliza exclusivamente para posicionarte en el mapa turístico y verificar si has llegado físicamente a los puntos de interés de las rutas locales turísticas (Geofencing). Los datos de ubicación se procesan de forma local en el dispositivo y no se guardan permanentemente en servidores externos.
+            </li>
+            <li data-lang-es="<strong>Conexión a Internet y Red:</strong> La aplicación accede a internet para descargar y sincronizar la información actualizada de las rutas y puntos de interés utilizando los servicios de Google Firebase/Firestore." data-lang-ca="<strong>Connexió a Internet i Xarxa:</strong> L'aplicació accedeix a internet per descarregar i sincronitzar la informació actualitzada de les rutes i punts d'interès utilitzant els serveis de Google Firebase/Firestore." data-lang-en="<strong>Internet Connection &amp; Network:</strong> The application accesses the internet to download and synchronize updated information about routes and points of interest using Google Firebase/Firestore services.">
+              <strong>Conexión a Internet y Red:</strong> La aplicación accede a internet para descargar y sincronizar la información actualizada de las rutas y puntos de interés utilizando los servicios de Google Firebase/Firestore.
+            </li>
+            <li data-lang-es="<strong>Datos de Progreso y Preferencias (Locales):</strong> Puntos visitados de cada ruta, configuración de idioma (ES / CA / EN) y tema visual seleccionado." data-lang-ca="<strong>Dades de Progrés i Preferències (Locals):</strong> Punts visitats de cada ruta, configuració d'idioma (ES / CA / EN) i tema visual seleccionat." data-lang-en="<strong>Progress Data &amp; Preferences (Local):</strong> Visited points along each route, selected app language (ES / CA / EN), and chosen theme.">
+              <strong>Datos de Progreso y Preferencias (Locales):</strong> Puntos visitados de cada ruta, configuración de idioma (ES / CA / EN) y tema visual seleccionado.
+            </li>
+          </ul>
+        </section>
+
+        <!-- 4. Finalidad y Uso -->
+        <section id="finalidad" class="policy-section">
+          <h2 data-lang-es="4. Cómo se Utiliza la Información" data-lang-ca="4. Com s'utilitza la informació" data-lang-en="4. How the Information is Used">4. Cómo se Utiliza la Información</h2>
+          <p data-lang-es="Toda la información de ubicación y red recopilada se utiliza de forma inmediata e interactiva para:" data-lang-ca="Tota la informació d'ubicació i xarxa recopilada s'utilitza de forma immediata i interactiva per a:" data-lang-en="All collected location and network information is used immediately and interactively to:">
+            Toda la información de ubicación y red recopilada se utiliza de forma inmediata e interactiva para:
+          </p>
+          <ul>
+            <li data-lang-es="Dibujar tu posición actual sobre el mapa interactivo de la ruta de Sant Hilari Sacalm." data-lang-ca="Dibuixar la teva posició actual sobre el mapa interactiu de la ruta de Sant Hilari Sacalm." data-lang-en="Draw your current position on the interactive map of the Sant Hilari Sacalm route.">
+              Dibujar tu posición actual sobre el mapa interactivo de la ruta de Sant Hilari Sacalm.
+            </li>
+            <li data-lang-es="Activar las notificaciones y registrar el progreso de la ruta completada cuando llegas a un punto emblemático (Geofencing)." data-lang-ca="Activar les notificacions i registrar el progrés de la ruta completada quan arribes a un punt emblemàtic (Geofencing)." data-lang-en="Trigger notifications and record the progress of the completed route when arriving at points of interest (Geofencing).">
+              Activar las notificaciones y registrar el progreso de la ruta completada cuando llegas a un punto emblemático (Geofencing).
+            </li>
+            <li data-lang-es="Mantener actualizado el catálogo de monumentos, fuentes, parajes naturales y senderos." data-lang-ca="Mantenir actualitzat el catàleg de monuments, fonts, paratges naturals i senders." data-lang-en="Keep the catalog of monuments, natural springs, trails, and cultural sites updated.">
+              Mantener actualizado el catálogo de monumentos, fuentes, parajes naturales y senderos.
+            </li>
+            <li data-lang-es="<strong>Compromiso de privacidad:</strong> No vendo, alquilo ni comparto tus datos personales o de ubicación con terceras partes para fines publicitarios o comerciales." data-lang-ca="<strong>Compromís de privacitat:</strong> No venc, llogo ni comparteixo les teves dades personals o d'ubicació amb terceres parts per a finalitats publicitàries o comercials." data-lang-en="<strong>Privacy commitment:</strong> I do not sell, rent, or share your personal or location data with third parties for advertising or commercial purposes.">
+              <strong>Compromiso de privacidad:</strong> No vendo, alquilo ni comparto tus datos personales o de ubicación con terceras partes para fines publicitarios o comerciales.
+            </li>
+          </ul>
+        </section>
+
+        <!-- 5. Almacenamiento local -->
+        <section id="almacenamiento" class="policy-section">
+          <h2 data-lang-es="5. Almacenamiento de Datos" data-lang-ca="5. Emmagatzematge de Dades" data-lang-en="5. Data Storage">5. Almacenamiento de Datos</h2>
+          <p data-lang-es="Los datos de progreso (puntos visitados, configuración de idioma y tema de la app) se almacenan localmente en el dispositivo utilizando bases de datos <strong>Room</strong> y <strong>Jetpack DataStore</strong> de Android." data-lang-ca="Les dades de progrés (punts visitats, configuració d'idioma i tema de l'app) s'emmagatzemen localment al dispositiu mitjançant bases de dades <strong>Room</strong> i <strong>Jetpack DataStore</strong> de Android." data-lang-en="Progress data (visited points, language settings, and app theme) is stored locally on the device using Android <strong>Room</strong> and <strong>Jetpack DataStore</strong> databases.">
+            Los datos de progreso (puntos visitados, configuración de idioma y tema de la app) se almacenan localmente en el dispositivo utilizando bases de datos <strong>Room</strong> y <strong>Jetpack DataStore</strong> de Android.
+          </p>
+          <div class="info-box">
+            <p data-lang-es="<strong>Control total del usuario:</strong> Puedes borrar todos estos datos en cualquier momento reiniciando el progreso desde la propia aplicación, limpiando el almacenamiento en los Ajustes de Android o simplemente desinstalando la aplicación." data-lang-ca="<strong>Control total de l'usuari:</strong> Pots esborrar totes aquestes dades en qualsevol moment reiniciant el progrés des de la pròpia aplicació, netejant l'emmagatzematge als Ajustos d'Android o senzillament desinstal·lant l'aplicació." data-lang-en="<strong>Total user control:</strong> You can delete all this data at any time by resetting progress within the app, clearing storage in Android Settings, or uninstalling the application.">
+              <strong>Control total del usuario:</strong> Puedes borrar todos estos datos en cualquier momento reiniciando el progreso desde la propia aplicación, limpiando el almacenamiento en los Ajustes de Android o simplemente desinstalando la aplicación.
+            </p>
+          </div>
+        </section>
+
+        <!-- 6. Servicios de Terceros -->
+        <section id="terceros" class="policy-section">
+          <h2 data-lang-es="6. Servicios de Terceros" data-lang-ca="6. Serveis de Tercers" data-lang-en="6. Third-Party Services">6. Servicios de Terceros</h2>
+          <p data-lang-es="La aplicación utiliza servicios oficiales SDK de Google para su funcionamiento técnico. Estos proveedores pueden recopilar información técnica de uso y diagnóstico de acuerdo con sus propias políticas de privacidad:" data-lang-ca="L'aplicació utilitza serveis oficials SDK de Google per al seu funcionament tècnic. Aquests proveïdors poden recopilar informació tècnica d'ús i diagnòstic d'acord amb les seves pròpies polítiques de privacitat:" data-lang-en="The application uses official Google SDK services for technical operation. These providers may collect technical usage and diagnostic data under their own privacy policies:">
+            La aplicación utiliza servicios oficiales SDK de Google para su funcionamiento técnico. Estos proveedores pueden recopilar información técnica de uso y diagnóstico de acuerdo con sus propias políticas de privacidad:
+          </p>
+          <ul>
+            <li>
+              <strong>Google Play Services:</strong> 
+              <span data-lang-es="Distribución de la app, servicios del sistema operativo Android y verificación de integridad." data-lang-ca="Distribució de l'app, serveis del sistema operatiu Android i verificació d'integritat." data-lang-en="App distribution, core Android operating system services, and integrity checks.">Distribución de la app, servicios del sistema operativo Android y verificación de integridad.</span>
+              (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>)
+            </li>
+            <li>
+              <strong>Google Maps Android API / SDK:</strong> 
+              <span data-lang-es="Visualización del mapa cartográfico interactivo de las rutas de Sant Hilari Sacalm." data-lang-ca="Visualització del mapa cartogràfic interactiu de les rutes de Sant Hilari Sacalm." data-lang-en="Rendering interactive cartographic maps for Sant Hilari Sacalm routes.">Visualización del mapa cartográfico interactivo de las rutas de Sant Hilari Sacalm.</span>
+              (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Maps Terms &amp; Privacy</a>)
+            </li>
+            <li>
+              <strong>Google Firebase &amp; Cloud Firestore:</strong> 
+              <span data-lang-es="Sincronización en la nube de rutas turísticas, descripciones, coordenadas de puntos de interés y avisos del municipio." data-lang-ca="Sincronització al núvol de rutes turístiques, descripcions, coordenades de punts d'interès i avisos del municipi." data-lang-en="Cloud synchronization of tourist routes, descriptions, coordinates of points of interest, and municipal announcements.">Sincronización en la nube de rutas turísticas, descripciones, coordenadas de puntos de interés y avisos del municipio.</span>
+              (<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy and Security</a>)
+            </li>
+          </ul>
+        </section>
+
+        <!-- 7. Tus Derechos -->
+        <section id="derechos" class="policy-section">
+          <h2 data-lang-es="7. Tus Derechos (ARCO / RGPD)" data-lang-ca="7. Els Teus Drets (ARCO / RGPD)" data-lang-en="7. Your Rights (GDPR)">7. Tus Derechos (ARCO / RGPD)</h2>
+          <p data-lang-es="Conforme al Reglamento General de Protección de Datos (RGPD) y la LOPD-GDD, tienes derecho a:" data-lang-ca="D'acord amb el Reglament General de Protecció de Dades (RGPD) i la LOPD-GDD, tens dret a:" data-lang-en="In accordance with GDPR and applicable data protection regulations, you have the right to:">
+            Conforme al Reglamento General de Protección de Datos (RGPD) y la LOPD-GDD, tienes derecho a:
+          </p>
+          <ul>
+            <li data-lang-es="<strong>Acceso y rectificación:</strong> Consultar qué datos técnicos se tratan o solicitar asistencia." data-lang-ca="<strong>Accés i rectificació:</strong> Consultar quines dades tècniques es tracten o sol·licitar assistència." data-lang-en="<strong>Access and rectification:</strong> Consult what technical data is processed or request assistance.">
+              <strong>Acceso y rectificación:</strong> Consultar qué datos técnicos se tratan o solicitar asistencia.
+            </li>
+            <li data-lang-es="<strong>Supresión (derecho al olvido):</strong> Eliminar tus datos locales desinstalando la app o pulsando reiniciar progreso." data-lang-ca="<strong>Supressió (dret a l'oblit):</strong> Eliminar les teves dades locals desinstal·lant l'aplicació o prement reiniciar progrés." data-lang-en="<strong>Erasure (right to be forgotten):</strong> Delete local data by uninstalling the app or resetting progress.">
+              <strong>Supresión (derecho al olvido):</strong> Eliminar tus datos locales desinstalando la app o pulsando reiniciar progreso.
+            </li>
+            <li data-lang-es="<strong>Revocación del consentimiento:</strong> Puedes retirar el permiso de ubicación GPS en cualquier momento desde los <em>Ajustes de tu dispositivo &gt; Aplicaciones &gt; SHSmap &gt; Permisos</em>." data-lang-ca="<strong>Revocació del consentiment:</strong> Pots retirar el permís d'ubicació GPS en qualsevol moment des dels <em>Ajustos del dispositiu &gt; Aplicacions &gt; SHSmap &gt; Permisos</em>." data-lang-en="<strong>Withdrawal of consent:</strong> You can revoke GPS location permission at any time via <em>Device Settings &gt; Apps &gt; SHSmap &gt; Permissions</em>.">
+              <strong>Revocación del consentimiento:</strong> Puedes retirar el permiso de ubicación GPS en cualquier momento desde los <em>Ajustes de tu dispositivo &gt; Aplicaciones &gt; SHSmap &gt; Permisos</em>.
+            </li>
+            <li data-lang-es="<strong>Reclamación:</strong> Si consideras que se han vulnerado tus derechos, puedes acudir a la Agencia Española de Protección de Datos (<a href='https://www.aepd.es' target='_blank' rel='noopener noreferrer'>www.aepd.es</a>) o a la Autoritat Catalana de Protecció de Dades (<a href='https://apdcat.gencat.cat' target='_blank' rel='noopener noreferrer'>apdcat.gencat.cat</a>)." data-lang-ca="<strong>Reclamació:</strong> Si consideres que s'han vulnerat els teus drets, pots acudir a l'Agència Espanyola de Protecció de Dades (<a href='https://www.aepd.es' target='_blank' rel='noopener noreferrer'>www.aepd.es</a>) o a l'Autoritat Catalana de Protecció de Dades (<a href='https://apdcat.gencat.cat' target='_blank' rel='noopener noreferrer'>apdcat.gencat.cat</a>)." data-lang-en="<strong>Lodge a complaint:</strong> You may contact the Spanish Data Protection Agency (<a href='https://www.aepd.es' target='_blank' rel='noopener noreferrer'>www.aepd.es</a>) or the Catalan Data Protection Authority (<a href='https://apdcat.gencat.cat' target='_blank' rel='noopener noreferrer'>apdcat.gencat.cat</a>).">
+              <strong>Reclamación:</strong> Si consideras que se han vulnerado tus derechos, puedes acudir a la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a>) o a la Autoritat Catalana de Protecció de Dades (<a href="https://apdcat.gencat.cat" target="_blank" rel="noopener noreferrer">apdcat.gencat.cat</a>).
+            </li>
+          </ul>
+        </section>
+
+        <!-- 8. Privacidad de Menores -->
+        <section id="menores" class="policy-section">
+          <h2 data-lang-es="8. Privacidad de Menores" data-lang-ca="8. Privacitat de Menors" data-lang-en="8. Children's Privacy">8. Privacidad de Menores</h2>
+          <p data-lang-es="<strong>SHSmap</strong> es una aplicación orientada a la divulgación cultural, turística y natural de Sant Hilari Sacalm apta para familias y todo tipo de públicos. La aplicación no recopila deliberadamente información de identificación personal de niños o menores de edad. Si tienes cualquier consulta sobre menores y el uso de la aplicación, por favor ponte en contacto con nosotros." data-lang-ca="<strong>SHSmap</strong> és una aplicació orientada a la divulgació cultural, turística i natural de Sant Hilari Sacalm apta per a famílies i tot tipus de públics. L'aplicació no recopila deliberadament informació d'identificació personal de nens o menors d'edat. Si tens qualsevol consulta sobre menors i l'ús de l'aplicació, posa't en contacte amb nosaltres." data-lang-en="<strong>SHSmap</strong> is an application aimed at promoting the cultural, tourist, and natural heritage of Sant Hilari Sacalm, suitable for families and general audiences. The application does not knowingly collect personally identifiable information from children. If you have questions regarding children and app usage, please contact us.">
+            <strong>SHSmap</strong> es una aplicación orientada a la divulgación cultural, turística y natural de Sant Hilari Sacalm apta para familias y todo tipo de públicos. La aplicación no recopila deliberadamente información de identificación personal de niños o menores de edad. Si tienes cualquier consulta sobre menores y el uso de la aplicación, por favor ponte en contacto con nosotros.
+          </p>
+        </section>
+
+        <!-- 9. Seguridad -->
+        <section id="seguridad" class="policy-section">
+          <h2 data-lang-es="9. Seguridad de los Datos" data-lang-ca="9. Seguretat de les Dades" data-lang-en="9. Data Security">9. Seguridad de los Datos</h2>
+          <p data-lang-es="Se implementan las medidas técnicas y organizativas adecuadas para proteger cualquier información procesada en el dispositivo móvil contra accesos no autorizados, pérdidas o alteraciones indeseadas, siguiendo las recomendaciones y directrices oficiales de seguridad del sistema operativo Android." data-lang-ca="S'implementen les mesures tècniques i organitzatives adequades per protegir qualsevol informació processada al dispositiu mòbil contra accessos no autoritzats, pèrdues o alteracions indesitjades, seguint les recomanacions i directrius oficials de seguretat del sistema operatiu Android." data-lang-en="Appropriate technical and organizational measures are implemented to protect any information processed on the mobile device against unauthorized access, loss, or alteration, adhering to official Android OS security guidelines.">
+            Se implementan las medidas técnicas y organizativas adecuadas para proteger cualquier información procesada en el dispositivo móvil contra accesos no autorizados, pérdidas o alteraciones indeseadas, siguiendo las recomendaciones y directrices oficiales de seguridad del sistema operativo Android.
+          </p>
+        </section>
+
+        <!-- 10. Contacto -->
+        <section id="contacto" class="policy-section">
+          <h2 data-lang-es="10. Contacto y Soporte" data-lang-ca="10. Contacte i Suport" data-lang-en="10. Contact & Support">10. Contacto y Soporte</h2>
+          <p data-lang-es="Si tienes cualquier duda o pregunta sobre esta Política de Privacidad o la aplicación, puedes contactar según el tipo de consulta:" data-lang-ca="Si tens qualsevol dubte o pregunta sobre aquesta Política de Privacitat o l'aplicació, pots contactar segons el tipus de consulta:" data-lang-en="If you have any questions or doubts about this Privacy Policy or the application, you can contact according to the type of inquiry:">
+            Si tienes cualquier duda o pregunta sobre esta Política de Privacidad o la aplicación, puedes contactar según el tipo de consulta:
+          </p>
+          
+          <div class="info-box">
+            <ul>
+              <li data-lang-es="<strong>Preguntas técnicas y soporte de la app (Desarrollador):</strong> Hicham a través de ✉️ <a href='mailto:hichamlaaouni.dev@gmail.com'>hichamlaaouni.dev@gmail.com</a> o <a href='mailto:suport+hichamlaaouni.dev@gmail.com'>suport+hichamlaaouni.dev@gmail.com</a>" data-lang-ca="<strong>Preguntes tècniques i suport de l'app (Desenvolupador):</strong> Hicham a través de ✉️ <a href='mailto:hichamlaaouni.dev@gmail.com'>hichamlaaouni.dev@gmail.com</a> o <a href='mailto:suport+hichamlaaouni.dev@gmail.com'>suport+hichamlaaouni.dev@gmail.com</a>" data-lang-en="<strong>Technical questions and app support (Developer):</strong> Hicham via ✉️ <a href='mailto:hichamlaaouni.dev@gmail.com'>hichamlaaouni.dev@gmail.com</a> or <a href='mailto:suport+hichamlaaouni.dev@gmail.com'>suport+hichamlaaouni.dev@gmail.com</a>">
+                <strong>Preguntas técnicas y soporte de la app (Desarrollador):</strong> Hicham a través de ✉️ <a href="mailto:hichamlaaouni.dev@gmail.com">hichamlaaouni.dev@gmail.com</a> o <a href="mailto:suport+hichamlaaouni.dev@gmail.com">suport+hichamlaaouni.dev@gmail.com</a>
+              </li>
+              <li data-lang-es="<strong>Consultas de información general o del municipio (Ayuntamiento):</strong> Ajuntament de Sant Hilari Sacalm a través de su web 🌐 <a href='https://santhilari.cat' target='_blank' rel='noopener noreferrer'>https://santhilari.cat</a> o correo ✉️ <a href='mailto:ajuntament@santhilari.cat'>ajuntament@santhilari.cat</a>" data-lang-ca="<strong>Consultes d'informació general o del municipi (Ajuntament):</strong> Ajuntament de Sant Hilari Sacalm a través del seu web 🌐 <a href='https://santhilari.cat' target='_blank' rel='noopener noreferrer'>https://santhilari.cat</a> o correu ✉️ <a href='mailto:ajuntament@santhilari.cat'>ajuntament@santhilari.cat</a>" data-lang-en="<strong>General inquiries or municipality questions (Town Hall):</strong> Ajuntament de Sant Hilari Sacalm via their website 🌐 <a href='https://santhilari.cat' target='_blank' rel='noopener noreferrer'>https://santhilari.cat</a> or email ✉️ <a href='mailto:ajuntament@santhilari.cat'>ajuntament@santhilari.cat</a>">
+                <strong>Consultas de información general o del municipio (Ayuntamiento):</strong> Ajuntament de Sant Hilari Sacalm a través de su web 🌐 <a href="https://santhilari.cat" target="_blank" rel="noopener noreferrer">https://santhilari.cat</a> o correo ✉️ <a href="mailto:ajuntament@santhilari.cat">ajuntament@santhilari.cat</a>
+              </li>
+            </ul>
+          </div>
+
+          <div style="margin-top: 16px;">
+            <button class="btn-secondary" onclick="window.print()" data-lang-es="Imprimir / Guardar en PDF" data-lang-ca="Imprimir / Desar en PDF" data-lang-en="Print / Save as PDF">
+              Imprimir / Guardar en PDF
+            </button>
+          </div>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p data-lang-es="&copy; 2026 Hicham. Todos los derechos reservados." data-lang-ca="&copy; 2026 Hicham. Tots els drets reservats." data-lang-en="&copy; 2026 Hicham. All rights reserved.">&copy; 2026 Hicham. Todos los derechos reservados.</p>
+      <p><a href="../../index.html" data-lang-es="Volver al inicio" data-lang-ca="Tornar a l'inici" data-lang-en="Back to home">Volver al inicio</a></p>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/app.js"></script>
+</body>
+</html>

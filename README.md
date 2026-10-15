@@ -15,6 +15,8 @@ politics/
 │       ├── deploy.yml            # Despliegue automático a GitHub Pages en cada push
 │       └── new-policy.yml        # Generador de políticas con 1 clic
 ├── apps/                         # Cada aplicación aislada en su propia carpeta
+│   ├── shsmap/                   # Política de SHSmap (Sant Hilari Sacalm)
+│   │   └── index.html
 │   └── tic-tac-toe/
 │       └── index.html            # Política de Tic Tac Toe
 ├── assets/                       # Recursos comunes
@@ -53,12 +55,16 @@ node scripts/generate-policy.js --name "Mi App" --slug "mi-app" --category "Jueg
 
 ---
 
-## URL para Google Play Console
+## URLs para Google Play Console
 
-Enlace directo para Tic Tac Toe:
+Enlaces directos para tus aplicaciones:
 
 ```text
-https://<tu-usuario-github>.github.io/politics/apps/tic-tac-toe/
+# SHSmap (Sant Hilari Sacalm)
+https://hichamll04.github.io/politics/apps/shsmap/
+
+# Tic Tac Toe
+https://hichamll04.github.io/politics/apps/tic-tac-toe/
 ```
 
-Contacto de soporte configurado: `suport+hichamlaaouni.dev@gmail.com`.
+Contacto de soporte configurado: `suport+hichamlaaouni.dev@gmail.com` y `hichamlaaouni.dev@gmail.com`.

@@ -12,12 +12,13 @@
   <!-- Navigation -->
   <header class="navbar">
     <div class="container nav-content">
-      <a href="index.html" class="brand-link">
+      <a href="index.html" class="brand-link" data-lang-es="Políticas de Privacidad" data-lang-ca="Polítiques de Privacitat" data-lang-en="Privacy Policies">
         Políticas de Privacidad
       </a>
       <div class="nav-actions">
         <div class="lang-selector">
           <button type="button" class="lang-btn active" data-lang="es" onclick="setLanguage('es')">ES</button>
+          <button type="button" class="lang-btn" data-lang="ca" onclick="setLanguage('ca')">CA</button>
           <button type="button" class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
         </div>
         <button id="theme-toggle-btn" class="control-btn" onclick="toggleTheme()" aria-label="Cambiar tema">
@@ -30,10 +31,10 @@
   <!-- Hero -->
   <main class="container">
     <section class="hero">
-      <h1 class="hero-title" data-lang-es="Políticas de Privacidad" data-lang-en="Privacy Policies">
+      <h1 class="hero-title" data-lang-es="Políticas de Privacidad" data-lang-ca="Polítiques de Privacitat" data-lang-en="Privacy Policies">
         Políticas de Privacidad
       </h1>
-      <p class="hero-description" data-lang-es="Avisos legales y condiciones de privacidad de aplicaciones móviles publicadas en Google Play Store." data-lang-en="Legal notices and privacy conditions for mobile applications published on Google Play Store.">
+      <p class="hero-description" data-lang-es="Avisos legales y condiciones de privacidad de aplicaciones móviles publicadas en Google Play Store." data-lang-ca="Avisos legals i condicions de privacitat d'aplicacions mòbils publicades a Google Play Store." data-lang-en="Legal notices and privacy conditions for mobile applications published on Google Play Store.">
         Avisos legales y condiciones de privacidad de aplicaciones móviles publicadas en Google Play Store.
       </p>
 
@@ -44,6 +45,7 @@
           class="search-input" 
           placeholder="Buscar aplicación..." 
           data-lang-es="Buscar aplicación..." 
+          data-lang-ca="Cercar aplicació..."
           data-lang-en="Search application..."
           aria-label="Buscar aplicación"
         >
@@ -54,32 +56,52 @@
     <section>
       <div class="apps-grid" id="apps-container">
 
+        <!-- SHSmap Card -->
+        <article class="app-card">
+          <div class="app-header">
+            <h2 class="app-title">SHSmap (Sant Hilari Sacalm)</h2>
+            <div class="app-meta">Android &bull; Google Play</div>
+          </div>
+          <p class="app-desc" data-lang-es="Guía turística interactiva de rutas y puntos de interés de Sant Hilari Sacalm con geolocalización GPS y sincronización Firebase." data-lang-ca="Guia turística interactiva de rutes i punts d'interès de Sant Hilari Sacalm amb geolocalització GPS i sincronització Firebase." data-lang-en="Interactive tourist guide of routes and points of interest in Sant Hilari Sacalm with GPS geolocation and Firebase sync.">
+            Guía turística interactiva de rutas y puntos de interés de Sant Hilari Sacalm con geolocalización GPS y sincronización Firebase.
+          </p>
+          <div class="app-tags">
+            <span class="tag-badge">RGPD / LOPD-GDD</span>
+            <span class="tag-badge" data-lang-es="Ubicación (GPS)" data-lang-ca="Ubicació (GPS)" data-lang-en="Location (GPS)">Ubicación (GPS)</span>
+            <span class="tag-badge">Google Maps &amp; Firebase</span>
+            <span class="tag-badge" data-lang-es="Turismo y Rutas" data-lang-ca="Turisme i Rutes" data-lang-en="Tourism &amp; Routes">Turismo y Rutas</span>
+            <span class="tag-badge">Sant Hilari Sacalm</span>
+          </div>
+          <a href="apps/shsmap/index.html" class="btn-primary" data-lang-es="Ver Política de Privacidad" data-lang-ca="Veure Política de Privacitat" data-lang-en="View Privacy Policy">
+            Ver Política de Privacidad
+          </a>
+        </article>
+
         <!-- Tic Tac Toe Card -->
         <article class="app-card">
           <div class="app-header">
             <h2 class="app-title">Tic Tac Toe</h2>
             <div class="app-meta">Android &bull; Google Play</div>
           </div>
-          <p class="app-desc" data-lang-es="Juego clásico de Tres en Raya para Android. Partidas locales sin recopilación de datos personales." data-lang-en="Classic Tic Tac Toe game for Android. Local matches with no personal data collection.">
+          <p class="app-desc" data-lang-es="Juego clásico de Tres en Raya para Android. Partidas locales sin recopilación de datos personales." data-lang-ca="Joc clàssic de Tres en Ratlla per a Android. Partides locals sense recopilació de dades personals." data-lang-en="Classic Tic Tac Toe game for Android. Local matches with no personal data collection.">
             Juego clásico de Tres en Raya para Android. Partidas locales sin recopilación de datos personales.
           </p>
           <div class="app-tags">
             <span class="tag-badge">RGPD / LOPD-GDD</span>
-            <span class="tag-badge" data-lang-es="Menores (COPPA)" data-lang-en="COPPA Compliant">Menores (COPPA)</span>
-            <span class="tag-badge" data-lang-es="Almacenamiento local" data-lang-en="Local Storage">Almacenamiento local</span>
+            <span class="tag-badge" data-lang-es="Menores (COPPA)" data-lang-ca="Menors (COPPA)" data-lang-en="COPPA Compliant">Menores (COPPA)</span>
+            <span class="tag-badge" data-lang-es="Almacenamiento local" data-lang-ca="Emmagatzematge local" data-lang-en="Local Storage">Almacenamiento local</span>
           </div>
-          <a href="apps/tic-tac-toe/index.html" class="btn-primary" data-lang-es="Ver Política de Privacidad" data-lang-en="View Privacy Policy">
+          <a href="apps/tic-tac-toe/index.html" class="btn-primary" data-lang-es="Ver Política de Privacidad" data-lang-ca="Veure Política de Privacitat" data-lang-en="View Privacy Policy">
             Ver Política de Privacidad
           </a>
         </article>
 
         <!-- Template / Next App Card -->
-        <!-- Template / Next App Card -->
 
       </div>
 
       <div id="no-search-results" style="display: none; padding: 24px 0; color: var(--text-muted);">
-        <p data-lang-es="No se encontraron aplicaciones con ese nombre." data-lang-en="No applications found.">No se encontraron aplicaciones con ese nombre.</p>
+        <p data-lang-es="No se encontraron aplicaciones con ese nombre." data-lang-ca="No s'han trobat aplicacions amb aquest nom." data-lang-en="No applications found.">No se encontraron aplicaciones con ese nombre.</p>
       </div>
     </section>
   </main>
@@ -87,7 +109,7 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p data-lang-es="&copy; 2026 Hicham. Contacto: suport+hichamlaaouni.dev@gmail.com" data-lang-en="&copy; 2026 Hicham. Contact: suport+hichamlaaouni.dev@gmail.com">
+      <p data-lang-es="&copy; 2026 Hicham. Contacto: suport+hichamlaaouni.dev@gmail.com" data-lang-ca="&copy; 2026 Hicham. Contacte: suport+hichamlaaouni.dev@gmail.com" data-lang-en="&copy; 2026 Hicham. Contact: suport+hichamlaaouni.dev@gmail.com">
         &copy; 2026 Hicham &bull; Contacto: <a href="mailto:suport+hichamlaaouni.dev@gmail.com">suport+hichamlaaouni.dev@gmail.com</a>
       </p>
     </div>
