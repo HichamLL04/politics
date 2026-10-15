@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal de Políticas de Privacidad | Hicham Apps</title>
-  <meta name="description" content="Centro oficial de políticas de privacidad, términos de servicio y avisos legales para las aplicaciones y repositorios de Hicham. Conforme a RGPD y Google Play.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Políticas de Privacidad | Hicham</title>
+  <meta name="description" content="Centro de políticas de privacidad y avisos legales para aplicaciones móviles y proyectos de Hicham.">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -16,11 +13,7 @@
   <header class="navbar">
     <div class="container nav-content">
       <a href="index.html" class="brand-link">
-        <div class="brand-icon">⚖️</div>
-        <div>
-          <span class="brand-title">Legal & Policies Hub</span>
-          <span class="brand-badge" data-lang-es="Oficial" data-lang-en="Official">Oficial</span>
-        </div>
+        Políticas de Privacidad
       </a>
       <div class="nav-actions">
         <div class="lang-selector">
@@ -28,7 +21,7 @@
           <button type="button" class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
         </div>
         <button id="theme-toggle-btn" class="control-btn" onclick="toggleTheme()" aria-label="Cambiar tema">
-          <span>☀️</span> Modo Claro
+          Modo Claro
         </button>
       </div>
     </div>
@@ -37,27 +30,21 @@
   <!-- Hero -->
   <main class="container">
     <section class="hero">
-      <div class="hero-tag">
-        <span>🔒</span>
-        <span data-lang-es="Transparencia, RGPD y Google Play Console" data-lang-en="Transparency, GDPR & Google Play Console">Transparencia, RGPD y Google Play Console</span>
-      </div>
-      <h1 class="hero-title" data-lang-es="Políticas de Privacidad de mis Aplicaciones" data-lang-en="Privacy Policies for My Applications">
-        Políticas de Privacidad de mis Aplicaciones
+      <h1 class="hero-title" data-lang-es="Políticas de Privacidad" data-lang-en="Privacy Policies">
+        Políticas de Privacidad
       </h1>
-      <p class="hero-description" data-lang-es="Portal unificado de avisos de privacidad y condiciones de uso para todas las aplicaciones móviles y proyectos de código abierto publicados en Google Play Store y GitHub." data-lang-en="Unified hub for privacy notices and terms of use for all mobile applications and open source projects published on Google Play Store and GitHub.">
-        Portal unificado de avisos de privacidad y condiciones de uso para todas las aplicaciones móviles y proyectos de código abierto publicados en Google Play Store y GitHub.
+      <p class="hero-description" data-lang-es="Avisos legales y condiciones de privacidad de aplicaciones móviles publicadas en Google Play Store." data-lang-en="Legal notices and privacy conditions for mobile applications published on Google Play Store.">
+        Avisos legales y condiciones de privacidad de aplicaciones móviles publicadas en Google Play Store.
       </p>
 
-      <!-- Search bar -->
       <div class="search-wrapper">
-        <span class="search-icon">🔍</span>
         <input 
           type="text" 
           id="app-search-input" 
           class="search-input" 
-          placeholder="Buscar aplicación o repositorio..." 
-          data-lang-es="Buscar aplicación o repositorio..." 
-          data-lang-en="Search application or repository..."
+          placeholder="Buscar aplicación..." 
+          data-lang-es="Buscar aplicación..." 
+          data-lang-en="Search application..."
           aria-label="Buscar aplicación"
         >
       </div>
@@ -70,82 +57,38 @@
         <!-- Tic Tac Toe Card -->
         <article class="app-card">
           <div class="app-header">
-            <div class="app-avatar">❌⭕</div>
-            <div class="app-title-group">
-              <h3>Tic Tac Toe</h3>
-              <div class="app-meta">Android &bull; Google Play Console</div>
-            </div>
+            <h2 class="app-title">Tic Tac Toe</h2>
+            <div class="app-meta">Android &bull; Google Play</div>
           </div>
-          <p class="app-desc" data-lang-es="Juego clásico de Tres en Raya para Android. Partidas rápidas contra la IA o multijugador local en el mismo dispositivo." data-lang-en="Classic Tic Tac Toe game for Android. Quick offline matches against AI or local two-player mode on the same device.">
-            Juego clásico de Tres en Raya para Android. Partidas rápidas contra la IA o multijugador local en el mismo dispositivo.
+          <p class="app-desc" data-lang-es="Juego clásico de Tres en Raya para Android. Partidas locales sin recopilación de datos personales." data-lang-en="Classic Tic Tac Toe game for Android. Local matches with no personal data collection.">
+            Juego clásico de Tres en Raya para Android. Partidas locales sin recopilación de datos personales.
           </p>
           <div class="app-tags">
-            <span class="tag-badge">🛡️ RGPD / LOPD-GDD</span>
-            <span class="tag-badge">👶 Apto para menores (COPPA)</span>
-            <span class="tag-badge">📱 Almacenamiento local</span>
-            <span class="tag-badge">✅ Play Console Ready</span>
+            <span class="tag-badge">RGPD / LOPD-GDD</span>
+            <span class="tag-badge" data-lang-es="Menores (COPPA)" data-lang-en="COPPA Compliant">Menores (COPPA)</span>
+            <span class="tag-badge" data-lang-es="Almacenamiento local" data-lang-en="Local Storage">Almacenamiento local</span>
           </div>
-          <div class="app-footer">
-            <a href="apps/tic-tac-toe/index.html" class="btn-primary" data-lang-es="Ver Política de Privacidad" data-lang-en="View Privacy Policy">
-              Ver Política de Privacidad &rarr;
-            </a>
-          </div>
+          <a href="apps/tic-tac-toe/index.html" class="btn-primary" data-lang-es="Ver Política de Privacidad" data-lang-en="View Privacy Policy">
+            Ver Política de Privacidad
+          </a>
         </article>
 
         <!-- Template / Next App Card -->
-        <article class="app-card" style="border-style: dashed; background: rgba(22, 33, 56, 0.35);">
-          <div class="app-header">
-            <div class="app-avatar" style="background: rgba(168, 85, 247, 0.1); border-color: rgba(168, 85, 247, 0.25);">➕</div>
-            <div class="app-title-group">
-              <h3 data-lang-es="Añadir Nueva Aplicación" data-lang-en="Add New Application">Añadir Nueva Aplicación</h3>
-              <div class="app-meta" data-lang-es="Estructura limpia por carpetas" data-lang-en="Clean folder structure">Estructura limpia por carpetas</div>
-            </div>
-          </div>
-          <p class="app-desc" data-lang-es="Cada app tiene su propia subcarpeta aislada dentro de 'apps/nombre-app/index.html'. Sin mezclar archivos ni ensuciar la raíz." data-lang-en="Each app has its own isolated subfolder in 'apps/app-name/index.html'. Clean root without mixed files.">
-            Cada app tiene su propia subcarpeta aislada dentro de 'apps/nombre-app/index.html'. Sin mezclar archivos ni ensuciar la raíz.
-          </p>
-          <div class="app-tags">
-            <span class="tag-badge">📁 apps/tu-nueva-app/</span>
-            <span class="tag-badge">⚡ URLs limpias</span>
-          </div>
-          <div class="app-footer">
-            <a href="#github-pages-guide" class="btn-secondary" style="width: 100%; text-align: center;" data-lang-es="Ver cómo organizar y publicar" data-lang-en="View guide">
-              Ver cómo organizar y publicar
-            </a>
-          </div>
-        </article>
+        <!-- Template / Next App Card -->
 
       </div>
 
-      <!-- No search results notification -->
-      <div id="no-search-results" style="display: none; text-align: center; padding: 40px; color: var(--text-muted);">
-        <p data-lang-es="No se encontraron aplicaciones con ese nombre." data-lang-en="No applications found matching your search.">No se encontraron aplicaciones con ese nombre.</p>
-      </div>
-    </section>
-
-    <!-- Quick Guide for Google Play & Architecture -->
-    <section id="github-pages-guide" style="margin-top: 20px; margin-bottom: 70px;">
-      <div class="app-card" style="border-color: rgba(56, 189, 248, 0.3);">
-        <h3 style="font-size: 1.3rem; margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
-          📁 <span data-lang-es="Estructura Limpia y Despliegue en GitHub Pages" data-lang-en="Clean Structure & GitHub Pages Deployment">Estructura Limpia y Despliegue en GitHub Pages</span>
-        </h3>
-        <p style="color: var(--text-secondary); margin-bottom: 16px;" data-lang-es="Cada aplicación cuenta con su propia carpeta aislada dentro de <code>apps/</code>, lo que mantiene el repositorio impecable y genera URLs directas y elegantes para Google Play Console:" data-lang-en="Each app has its isolated folder in <code>apps/</code>, keeping the repository tidy and generating clean URLs for Play Console:">
-          Cada aplicación cuenta con su propia carpeta aislada dentro de <code>apps/</code>, lo que mantiene el repositorio impecable y genera URLs directas y elegantes para Google Play Console:
-        </p>
-        <ol style="margin-left: 24px; color: var(--text-secondary); line-height: 1.8;">
-          <li><strong data-lang-es="URL pública de Tic Tac Toe:" data-lang-en="Tic Tac Toe Public URL:">URL pública de Tic Tac Toe:</strong> <code>https://&lt;tu-usuario&gt;.github.io/politics/apps/tic-tac-toe/</code></li>
-          <li><strong data-lang-es="Añadir una nueva app:" data-lang-en="Add a new app:">Añadir una nueva app:</strong> Simplemente crea <code>apps/mi-otra-app/index.html</code> (puedes copiar la plantilla de Tic Tac Toe) y añade su tarjeta en este portal.</li>
-          <li><strong data-lang-es="Activar en GitHub Pages:" data-lang-en="Enable in GitHub Pages:">Activar en GitHub Pages:</strong> En tu repo de GitHub &rarr; <strong>Settings &rarr; Pages</strong> &rarr; Branch <code>main</code> y carpeta <code>/ (root)</code> &rarr; <strong>Save</strong>.</li>
-        </ol>
+      <div id="no-search-results" style="display: none; padding: 24px 0; color: var(--text-muted);">
+        <p data-lang-es="No se encontraron aplicaciones con ese nombre." data-lang-en="No applications found.">No se encontraron aplicaciones con ese nombre.</p>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    <div class="container footer-content">
-      <p data-lang-es="&copy; 2026 Portal de Políticas de Hicham. Conforme a RGPD, LOPD-GDD y Google Play Developer Policy." data-lang-en="&copy; 2026 Hicham Policies Portal. GDPR, LOPD-GDD & Google Play Developer Policy Compliant.">
-        &copy; 2026 Portal de Políticas de Hicham. Conforme a RGPD, LOPD-GDD y Google Play Developer Policy.
+    <div class="container">
+      <p data-lang-es="&copy; 2026 Hicham. Contacto: suport+hichamlaaouni.dev@gmail.com" data-lang-en="&copy; 2026 Hicham. Contact: suport+hichamlaaouni.dev@gmail.com">
+        &copy; 2026 Hicham &bull; Contacto: <a href="mailto:suport+hichamlaaouni.dev@gmail.com">suport+hichamlaaouni.dev@gmail.com</a>
       </p>
     </div>
   </footer>

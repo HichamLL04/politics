@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       app_name:
-        description: 'Nombre de la aplicación (Ej: Brick Breaker, Mi App)'
+        description: 'Nombre de la aplicación (Ej: Brick Breaker)'
         required: true
         type: string
       app_slug:
@@ -19,7 +19,7 @@ on:
       contact_email:
         description: 'Correo electrónico de contacto/soporte'
         required: false
-        default: 'soporte.apps.hicham@gmail.com'
+        default: 'suport+hichamlaaouni.dev@gmail.com'
         type: string
 
 jobs:

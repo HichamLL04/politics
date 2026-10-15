@@ -2,7 +2,7 @@
 function initTheme() {
   const savedTheme = localStorage.getItem('policy_portal_theme') || 'dark';
   document.documentElement.setAttribute('data-theme', savedTheme);
-  updateThemeIcon(savedTheme);
+  updateThemeText(savedTheme);
 }
 
 function toggleTheme() {
@@ -10,15 +10,13 @@ function toggleTheme() {
   const newTheme = current === 'dark' ? 'light' : 'dark';
   document.documentElement.setAttribute('data-theme', newTheme);
   localStorage.setItem('policy_portal_theme', newTheme);
-  updateThemeIcon(newTheme);
+  updateThemeText(newTheme);
 }
 
-function updateThemeIcon(theme) {
+function updateThemeText(theme) {
   const btn = document.getElementById('theme-toggle-btn');
   if (btn) {
-    btn.innerHTML = theme === 'dark' 
-      ? '<span aria-hidden="true">☀️</span> Modo Claro' 
-      : '<span aria-hidden="true">🌙</span> Modo Oscuro';
+    btn.textContent = theme === 'dark' ? 'Modo Claro' : 'Modo Oscuro';
   }
 }
 
@@ -53,7 +51,7 @@ function setLanguage(lang) {
 function copyCurrentUrl() {
   const url = window.location.href;
   navigator.clipboard.writeText(url).then(() => {
-    showToast('¡Enlace copiado al portapapeles! Listo para Google Play Console.');
+    showToast('Enlace copiado al portapapeles');
   }).catch(() => {
     const input = document.createElement('input');
     input.value = url;
@@ -61,7 +59,7 @@ function copyCurrentUrl() {
     input.select();
     document.execCommand('copy');
     document.body.removeChild(input);
-    showToast('¡Enlace copiado al portapapeles!');
+    showToast('Enlace copiado al portapapeles');
   });
 }
 
@@ -77,7 +75,7 @@ function showToast(message) {
   toast.classList.add('show');
   setTimeout(() => {
     toast.classList.remove('show');
-  }, 3000);
+  }, 2500);
 }
 
 // Search Filter on Hub
@@ -91,7 +89,7 @@ function initAppSearch() {
     let visibleCount = 0;
 
     cards.forEach(card => {
-      const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
+      const title = card.querySelector('.app-title')?.textContent.toLowerCase() || '';
       const desc = card.querySelector('.app-desc')?.textContent.toLowerCase() || '';
       const tags = card.querySelector('.app-tags')?.textContent.toLowerCase() || '';
 
@@ -119,7 +117,7 @@ function initTocSpy() {
 
   window.addEventListener('scroll', () => {
     let currentId = '';
-    const scrollPos = window.scrollY + 140;
+    const scrollPos = window.scrollY + 80;
 
     sections.forEach(section => {
       if (section.offsetTop <= scrollPos) {
@@ -138,13 +136,11 @@ document.addEventListener('DOMContentLoaded', () => {
   initAppSearch();
   initTocSpy();
 
-  // Populate dynamic current URL if on policy page
   const currentUrlCode = document.getElementById('current-page-url');
   if (currentUrlCode) {
     currentUrlCode.textContent = window.location.href;
   }
 
-  // Restore saved language or default to 'es'
   const savedLang = localStorage.getItem('policy_portal_lang') || 'es';
   setLanguage(savedLang);
 });
